@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <title>Team Shatterdome</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" href="login.css" type="text/css">
+
+    <link href="AvenirLTStd-Book.otf" rel='stylesheet' type='text/css'>
+
+  </head>
+  <body>
+    <section class="header">
+      <img src="Logo.png" alt="logo">
+      <input type="checkbox" id="chk">
+      <label for="chk" class="show-menu-btn">
+        <i class="fas fa-ellipsis-h"></i>
+      </label>
+      <ul class="menu">
+        <a class="dropbtn" href="index.html">Home</a>
+        <div class="dropdown">
+          <button class="dropbtn">About Us</button>
+          <div class="dropdown-content">
+            <a href="BugilAcademy.html"> Bugil Academy</a>
+            <a href="Teaminfo.html">Team Info</a>
+            <a href="history.html"> Team History</a>
+            <a href="member.html">Member</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn"> FTC</button>
+            <div class="dropdown-content">
+              <a href="FTC.html">What is FTC</a>
+              <a href="19-20.html">19-20 SkyStone</a>
+              <a href="18-19.html">18-19 Rover Ruckus</a>
+              <a href="17-18.html">17-18 Relic Recovery</a>
+            </div>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn"> S.S.G</button>
+            <div class="dropdown-content">
+              <a href="ssg.html">What is S.S.G</a>
+              <a href="register.html">Register</a>
+              <a href="Q&A.html">Q&A</a>
+            </div>
+        </div>
+        <div class="dropdown">
+          <a class="dropbtn" href="important.html">Team Forum</a>
+        </div>
+      </ul>
+    </section>
+    <section class="content">
+      <div class="intro">
+        <h1>Q&A</h1>
+          <p>Feel free to ask about S.S.G. This Q&A section is dedicated <strong>only</strong>
+            to ask questions regarding S.S.G. If you have other questions,
+            please ask us on <a href="as-q.html"> AS-Q the Team</a> section!
+            <br>
+          </p>
+      </div>
+      <h2>Login Form</h2>
+      <form action="/action_page.php" method="post">
+        <div class="imgcontainer">
+          <img src="img_avatar2.png" alt="Avatar" class="avatar">
+        </div>
+
+        <div class="container">
+          <label for="uname"><b>Username</b></label>
+          <input type="text" placeholder="Enter Username" name="uname" required>
+          <br>
+          <label for="psw"><b>Password</b></label>
+          <input type="password" placeholder="Enter Password" name="psw" required>
+          <br>
+          <button type="submit">Login</button>
+          <label>
+            <input type="checkbox" checked="checked" name="remember"> Remember me
+          </label>
+        </div>
+
+        <div class="container" style="background-color:#f1f1f1">
+          <button type="button" class="cancelbtn">Cancel</button>
+          <button type="button" class="Signupbtn">Sign Up</button>
+          <span class="psw">Forgot <a href="#">password?</a></span>
+        </div>
+      </form>
+      <div class="text">
+        <form action="/action_page.php" id="usrform">
+          <textarea rows="10" cols="100" name="comment" form="usrform">Enter text here...</textarea>
+          <input type="submit" value="Submit">
+        </form>
+      </div>
+    </section>
+
+
+
+  </body>
+</html>

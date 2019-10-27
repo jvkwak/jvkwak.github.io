@@ -1,0 +1,24 @@
+.description ul{
+  padding-left: 150px;
+  list-style: square !important;
+}
+.description{
+  margin-top: 30px;
+  width:70%;
+  height: 1000px;
+  padding-left:200px;
+  line-height:30px;
+  font-family:AvenirLTStd-Book;
+}
+.description h1{
+  font-size: 30px;
+  font-weight: bold;
+  border-bottom: 1px solid black;
+  margin-top: 20px;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+.description h3{
+  margin-top: 20px;
+
+}

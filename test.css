@@ -1,0 +1,37 @@
+.wrapper {
+  height: 100vh;
+}
+
+.parallax-img {
+  height: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Other styling elements, that are not necessary for the example */
+
+body {
+  margin: 0;
+  background: #000;
+}
+
+* {
+  font-family: Candara;
+  color: white;
+}
+
+h1 {
+  margin: 15px;
+  text-align: center;
+}
+
+p {
+  margin: 15px;
+  font-size: 1.1rem;
+}
+
+.parallax-img {
+  background-image: url('https://source.unsplash.com/random/1920x1080');
+}
