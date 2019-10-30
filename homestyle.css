@@ -1,0 +1,24 @@
+video {
+    position: fixed;
+    top: 40%
+    bottom: 0;
+    min-width: 100%;
+    min-height: 30%;
+
+}
+
+
+.content {
+  position: fixed;
+  margin-left: 27%;
+  bottom: 10%;
+  background: rgba(0, 0, 0, 0);
+
+  width: 20%;
+  height: 50%;
+  min-width: 500px;
+}
+
+.content p{
+  line-height: 20px;
+}

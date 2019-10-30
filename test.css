@@ -1,0 +1,47 @@
+
+
+/* Other styling elements, that are not necessary for the example */
+
+body {
+  margin: 0;
+  background: white;
+}
+
+* {
+  color: black;
+}
+
+
+p {
+  margin: 15px;
+  font-size: 1.1rem;
+  background:white;
+}
+.cover-title span{
+  font-size: 0.5em;
+  display:block;
+  text-indent: 3em;
+}
+.cover-title{
+  font-family: 'Staatliches', cursive;
+  color: white;
+  font-size: 100px;
+  margin:10px;
+  transition: padding .5s;
+}
+#sub {
+  font-family: 'Staatliches', cursive;
+  color: white;
+  font-size: 50px;
+  margin-left:10px;
+  margin-top:80px;
+  transition: padding .5s;
+}
+.cover{
+  background-image: url(ftcbackground.png);
+  padding-top: 10%;
+  padding-bottom:10%;
+  background-size: cover;
+  background-position: bottom;
+  transition: padding .5s;
+}

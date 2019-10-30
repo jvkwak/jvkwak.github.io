@@ -1,0 +1,15 @@
+body {
+  margin: 0;
+  background: white;
+}
+
+* {
+  color: black;
+}
+
+
+p {
+  margin: 15px;
+  font-size: 1.1rem;
+  background:white;
+}

@@ -1,0 +1,32 @@
+.column {
+  float: left;
+  width: 40%;
+  padding: 5px;
+  height: 200%;
+  padding-left: 75px;
+
+
+}
+
+/* Clear floats after the columns */
+.row{
+  margin: 10px 150px;
+  padding: 10px;
+  display: table;
+  clear: both;
+  border-style: solid;
+  border-radius: 5px;
+}
+.column p{
+  font-family: AvenirLTStd-Book;
+  line-height: 30px;
+}
+.column h2{
+  font-family: AvenirLTStd-Book;
+  margin-bottom: 10px;
+
+}
+iframe{
+
+  margin-left:20%;
+}

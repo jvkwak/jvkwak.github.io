@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+
+    <title>Team Shatterdome </title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" href="forumstyle.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic|Staatliches&display=swap" rel="stylesheet">
+
+  </head>
+  <body>
+    <section class="header">
+      <img src="Logo.png" alt="logo">
+      <input type="checkbox" id="chk">
+      <label for="chk" class="show-menu-btn">
+        <i class="fas fa-ellipsis-h"></i>
+      </label>
+      <ul class="menu">
+        <a class="dropbtn" href="index.html">Home</a>
+        <div class="dropdown">
+          <button class="dropbtn">About Us</button>
+          <div class="dropdown-content">
+            <a href="BugilAcademy.html"> Bugil Academy</a>
+            <a href="Teaminfo.html">Team Info</a>
+            <a href="timeline.html"> Team History</a>
+            <a href="members.html">Member</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn"> FTC</button>
+            <div class="dropdown-content">
+              <a href="FTC.html">What is FTC</a>
+              <a href="19-20.html">19-20 SkyStone</a>
+              <a href="18-19.html">18-19 Rover Ruckus</a>
+              <a href="17-18.html">17-18 Relic Recovery</a>
+            </div>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn"> S.S.G</button>
+            <div class="dropdown-content">
+              <a href="ssg.html">What is S.S.G</a>
+              <a href="register.html">Register</a>
+              <a href="Q&A.html">Q&A</a>
+            </div>
+        </div>
+          <a class="dropbtn" href="forum.html">Team Forum</a>
+      </ul>
+    </section>
+    <section class="description">
+      <div class="introduction">
+          <h1> Team Forum</h1>
+          <p> Post any changes that you think it is relavent to mention. Since
+            there are a lot of things going on during FTC season and games, it will be helpful
+            to post issues and to share those. Also, any question to the team is welcomed. Ask us
+            and connect with diverse teams around the world. Share your knowledge to the world!
+
+          </p>
+      </div>
+      <div class="form">
+        <h1>Leave a Question or a Message</h1>
+        <form action="/action_page.php" id="usrform">
+          <label for="uname"><b>Username</b></label>
+          <input type="text" placeholder="Enter Username" name="uname" class="username" required>
+          <br>
+          <label for="Email"><b>Email</b></label>
+          <input type="text" placeholder="Enter email" name="email" class="email" required>
+          <br>
+          <textarea rows="10" cols="100" name="comment" form="usrform">Write Anything! Form a Network</textarea>
+          <input type="submit" value="Submit" class="submit">
+        </form>
+      </div>
+
+  </body>
+</html>

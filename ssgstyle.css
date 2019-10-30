@@ -1,0 +1,138 @@
+.button {
+  background-color: #093563;
+  border: none;
+  color: #FF7800;
+  padding: 15px 40px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  left: 45%;
+  transform: translate(0%, -50%);
+  position: absolute;
+}
+body, h1, h2, dl, dd, ul{
+  margin:0;
+  padding:0;
+}
+body{
+  margin:0;
+  padding:0;
+  background: white;
+  width:100%;
+  min-width: 1200px;
+}
+.slidershow{
+  width: 943px;
+  height: 707px;
+  overflow:hidden;
+  background-color: #b5b6ba;
+}
+
+.writingbox{
+  position: relative;
+  text-align: left;
+  padding-right: 10px;
+  padding-top:50px;
+  transform: translateX(-100%);
+}
+.writingbox h2{
+  font-family: 'Staatliches', cursive;
+  position:relative;
+  text-align: Center;
+  font-size: 50px;
+}
+.writingbox p{
+  line-height: 1.4;
+  padding: 5px;
+  font-family: 'Nanum Gothic', sans-serif;
+  font-size: 15px;
+}
+.writingbox ul{
+  font-family: 'Nanum Gothic', sans-serif;
+  font-size: 18px;
+}
+.middle{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 70% );
+
+}
+.navigation{
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50% );
+  display: flex;
+}
+.bar{
+  width: 50px;
+  height: 10px;
+  border: 2px solid #fff;
+  margin: 6px;
+  cursor: pointer;
+  transition: 0.4s;
+
+}
+.bar:hover{
+  background:#fff;
+}
+input[name = "r"]{
+  position: absolute;
+  visibility: hidden;
+}
+.slides{
+  width: 600%;
+  height: 100%;
+  display:flex;
+}
+.slide{
+  width:20%;
+  transition:0.6s;
+}
+.slide img{
+  width:943px;
+  height:707px;
+  padding:0;
+}
+#r1:checked ~ .s1{
+  margin-left: 0;
+}
+#r2:checked ~ .s1{
+  margin-left: -20%;
+}
+.cover-title span{
+  font-size: 0.5em;
+  display:block;
+  text-indent: 3em;
+}
+.cover-title{
+  font-family: 'Staatliches', cursive;
+  color: white;
+  font-size: 100px;
+  margin:10px;
+  padding-left: 2%;
+  transition: padding .5s;
+}
+#sub {
+  font-family: 'Staatliches', cursive;
+  color: white;
+  font-size: 50px;
+  margin-left: 40px;
+  transition: padding .5s;
+}
+.cover{
+  background-image: url(bugil.png);
+  padding-top: 10%;
+  padding-bottom:10%;
+  background-size: cover;
+  background-position: bottom;
+  transition: padding .5s;
+}
+.about{
+  padding: 3% 7%;
+  line-height: 140%;
+}

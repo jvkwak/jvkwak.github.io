@@ -1,0 +1,167 @@
+body, h1, h2, dl, dd, ul{
+  margin:0;
+  padding:0;
+}
+
+li{
+  list-style-type: none;
+}
+body{
+  background-color: #1b3651;
+  text-align: center;
+}
+.wrapper{
+
+  max-width: 960px;
+  margin: 0 auto;
+}
+.cover{
+  background-image: url(https://i.imgur.com/xlmsXxM.jpg);
+  padding-top: 20%;
+  padding-bottom:10%;
+  background-size: cover;
+  background-position: bottom;
+  transition: padding .5s;
+}
+.cover-title{
+  font-family: 'Staatliches', cursive;
+  color: white;
+  font-size: 11vw;
+  margin:20px;
+  transition: padding .5s;
+}
+h3{
+  font-family: 'Staatliches', cursive;
+  color: white;
+  font-size: 5vw;
+}
+.cover-title span{
+  font-size: 0.5em;
+  display:block;
+  text-indent: 3em;
+}
+.timeline{
+  position: relative;
+  padding-bottom: 100px;
+}
+.timeline:after{
+  content: ' ';
+  background-color:black;
+  position:absolute;
+  left:50%;
+  margin-top: 20px;
+  top: 5vw;
+  bottom: 0;
+  width: 6px;
+  margin-left: -3px;
+  border-radius: 5px;
+  z-index:-1;
+
+}
+.timeline-item{
+  margin-top: 70px;
+}
+.card{
+  font-family: 'Nanum Gothic', sans-serif;
+  background-color: #4e91a7;
+  color: black
+  padding: 10px;
+  border-radius: 30px;
+}
+.header img{
+  width:200px;
+  height: 45px;
+  padding-top:5px;
+  min-width: 100px;
+  margin: 0 !important;
+  position: relative;
+  transform: translateX( -115%);
+
+}
+.card-icon{
+  width: 500px;
+  height: auto;
+  vertical-align: top;
+  position: relative;
+  top: -50px;
+}
+.card h2{
+  font-family: 'Staatliches', cursive, 'impact';
+  font-size: 3em;
+  color:#093563;
+  padding: 5px;
+  position: relative;
+}
+.card dt{
+  font-family: 'Staatliches', cursive, 'impact';
+  font-size: 2.5em;
+  margin-bottom:20px;
+}
+.card-definition{
+  padding: 10px;
+}
+.card-definition dd{
+  padding:10px;
+}
+
+@media (min-width: 720px){
+  .card h2:after{
+    content: ' ';
+    position:absolute;
+    right:-30px;
+    top: 50%;
+    background-color: #1b3651;
+    border: 10px solid #FF7800;
+    border-radius: 10px;
+    transform: translateY( -50%);
+    z-index: 10;
+  }
+  .card-icon{
+    width:70%;
+    height:70%;
+  }
+  .timeline-item{
+    width:50%;
+    padding: 0 20px;
+    box-sizing: border-box;
+  }
+  .timeline-item:nth-child(even){
+    margin-left:auto;
+    margin-top: -150px;
+    margin-bottom: -200px;
+  }
+  .timeline-item:nth-child(even) .card-icon{
+    position: relative;
+    left:auto;
+    right:0;
+  }
+  .timeline-item:nth-child(even) .card h2:after{
+    content: ' ';
+    position:absolute;
+    right:460px;
+    top: 50%;
+    background-color: #1b3651;
+    border-radius: 10px;
+    transform: translate(50%, -50%);
+    z-index: 10;
+  }
+  .cover{
+    padding-top: 10%;
+    padding-bottom: 5%;
+  }
+  .cover-title{
+    font-size: 15vw;
+  }
+}
+.scroll{
+  position:fixed;
+  top:50%;
+  right: 100px;
+  width:10px;
+  height:10px;
+  display:block;
+}
+.arrow{
+  width:50px;
+  height:50px;
+}
