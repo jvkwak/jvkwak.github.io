@@ -8,6 +8,11 @@
     <script src="https://apis.google.com/js/platform.js" async defer></script>
     <meta name="google-signin-client_id" content="530046462240-duhftkcbfu3p7l56t2g6h799p2f4tdr8.apps.googleusercontent.com">
     <script>
+      function init() {
+        console.log('init');
+      }
+    </script>
+    <script>
       function onSignIn(googleUser) {
         var profile = googleUser.getBasicProfile();
         console.log('ID: ' + profile.getId()); // Do not send to your backend! Use an ID token instead.
@@ -98,6 +103,6 @@
     </section>
 
 
-
+   <script src="https://apis.google.com/js/platform.js?onload=init" async defer></script>
   </body>
 </html>
