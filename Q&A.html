@@ -16,6 +16,12 @@
           })
           gauth.then(function(){
             console.log('googleAuth success');
+            if(gauth.isSignedIn.get()){
+              console.log('logged in');
+            }
+            else {
+              console.log('logged out');
+            }
           }, function(){
             console.log('googleAuth fail');
           });
