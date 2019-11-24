@@ -29,6 +29,10 @@
         console.log('Name: ' + profile.getName());
         console.log('Image URL: ' + profile.getImageUrl());
         console.log('Email: ' + profile.getEmail()); // This is null if the 'email' scope is not present.
+        let userid = document.getElementsBy
+        let username = 
+        let profileimg = 
+        let email = 
       }
     </script>
     <meta name="google-signin-client_id" content="530046462240-duhftkcbfu3p7l56t2g6h799p2f4tdr8.apps.googleusercontent.com">
@@ -71,7 +75,11 @@
           <a class="dropbtn" href="forum.html">Team Forum</a>
       </ul>
     </section>
+    
+    <!-- Contents-->
     <section class="content">
+      
+      <!-- Q&A Introduction -->
       <div class="intro">
         <h1>Q&A</h1>
           <p>Feel free to ask about S.S.G. This Q&A section is dedicated <strong>only</strong>
@@ -80,6 +88,8 @@
             <br>
           </p>
       </div>
+      
+      <!-- Login Form-->
       <h2>Login to Proceed</h2>
       <form action="/action_page.php" method="post">
         <div class="container">
@@ -99,10 +109,9 @@
         <div class="container" style="background-color:#f1f1f1">
           <button type="button" class="cancelbtn">Cancel</button>
           <button type="button" class="Signupbtn">Sign Up</button>
+          <!-- Sign In Button -->
+          <button><div class="g-signin2" data-onsuccess="onSignIn">Sign In with Google</div></button>
         </div>
-        
-        <!-- Sign In Button -->
-        <div class="g-signin2" data-onsuccess="onSignIn"></div>
       </form>
       
       <h2> Questions</h2>
