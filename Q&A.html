@@ -22,19 +22,7 @@
         });
       }
     </script>
-    <script>
-      function onSignIn(googleUser) {
-        var profile = googleUser.getBasicProfile();
-        console.log('ID: ' + profile.getId()); // Do not send to your backend! Use an ID token instead.
-        console.log('Name: ' + profile.getName());
-        console.log('Image URL: ' + profile.getImageUrl());
-        console.log('Email: ' + profile.getEmail()); // This is null if the 'email' scope is not present.
-        let userid = document.getElementsBy
-        let username = 
-        let profileimg = 
-        let email = 
-      }
-    </script>
+
     <meta name="google-signin-client_id" content="530046462240-duhftkcbfu3p7l56t2g6h799p2f4tdr8.apps.googleusercontent.com">
   </head>
   <body>
@@ -110,7 +98,7 @@
           <button type="button" class="cancelbtn">Cancel</button>
           <button type="button" class="Signupbtn">Sign Up</button>
           <!-- Sign In Button -->
-          <button><div class="g-signin2" data-onsuccess="onSignIn">Sign In with Google</div></button>
+         // <button><div class="g-signin2" data-onsuccess="onSignIn">Sign In with Google</div></button>
         </div>
       </form>
       
