@@ -27,12 +27,9 @@
 
 }
 iframe{
-  margin: 10px 150px;
-  padding: 10px;
-  display: table;
-  clear: both;
-  border-style: solid;
-  border-radius: 5px;
-  width: relative;
-  height: relative;
+  float: left;
+  width: 40%;
+  padding: 5px;
+  height: 200%;
+  padding-left: 75px;
 }
