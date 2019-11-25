@@ -29,6 +29,8 @@
 iframe{
   margin: 10px 150px;
   padding: 10px;
+  display: table;
+  clear: both;
   border-style: solid;
   border-radius: 5px;
 }
