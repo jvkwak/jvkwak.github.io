@@ -21,11 +21,12 @@
   font-family: Nanum Gothic, sans-serif;
   line-height: 30px;
 }
+
 .column h2{
   font-family: 'Staatliches', cursive;
   margin-bottom: 10px;
-
 }
+
 iframe{
   float: left;
   width: 40%;
