@@ -4,8 +4,6 @@
   padding: 5px;
   height: 200%;
   padding-left: 75px;
-
-
 }
 
 /* Clear floats after the columns */
@@ -34,3 +32,8 @@ iframe{
   height: 200%;
   padding-left: 75px;
 }
+
+.description{
+  text-align: center;
+}
+  
