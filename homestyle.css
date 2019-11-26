@@ -41,6 +41,10 @@
   text-align: center;
 }
 
+.content img{
+  text-align: center;
+}
+
 .content p{
   line-height: 20px;
 }
