@@ -26,10 +26,13 @@
   margin-bottom: 10px;
 
 }
+
 div.media{
+  margin: 15px;
   text-align: center;
 }
 
 div.media h1{
   text-align: center;
+  font-family: Impact;
 }
