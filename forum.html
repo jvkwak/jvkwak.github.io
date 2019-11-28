@@ -78,11 +78,13 @@
         var text = "";
         function myFunction() {
         var x = document.getElementById("usrform");
-        var i;
-        for (i = 0; i < x.length ;i++) {
-          text += x.elements[i].value + "<br><br>";
-        }
-        document.getElementById("questions").innerHTML = text;
+        usrname = x.elements[0].value;  
+        usrmail = x.elements[1].value;
+        usrquest = x.elements[2].value;                                                                               
+        document.getElementById("questions").innerHTML = 
+           "username: " + usrname + <br> + 
+           "email: " + usrmail + <br> + 
+           "question: " + usrquest + <br><br>;
         }
         </script>
   </body>
