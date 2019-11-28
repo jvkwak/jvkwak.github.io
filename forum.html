@@ -74,13 +74,14 @@
       <h1>Questions</h1>
       <p id="demo"></p>
       <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        const username = urlParams.get("uname");
+        const email = urlParams.get("email");
+        const comment = urlParams.get("comment");
         var text = "";
+        text += "username: " + usrname + "<br>" + "email: " + email + "<br>" + "question: " + comment + "<br><br>";
         function myFunction() {
-          var x = document.getElementById("usrform");
-          var usrname = x.elements[0].value;  
-          var usrmail = x.elements[1].value;
-          var usrquest = x.elements[2].value;                                                                                
-          text += "username: " + usrname + "<br>" + "email: " + usrmail + "<br>" + "question: " + usrquest + "<br><br>";
+          /*text += "username: " + usrname + "<br>" + "email: " + email + "<br>" + "question: " + comment + "<br><br>";*/
           document.getElementById("demo").innerHTML = text;
           console.log("check");
         }
