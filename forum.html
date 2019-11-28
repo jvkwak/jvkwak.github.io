@@ -60,6 +60,46 @@
       <!-- Team Forum Form -->
       <div class="form">
         <h1>Leave a Question or a Message</h1>
+        <form action="" id="usrform">
+          <label for="uname"><b>Username</b></label>
+          <input type="text" placeholder="Enter Username" name="uname" class="username" required>
+          <br>
+          <label for="Email"><b>Email</b></label>
+          <input type="text" placeholder="Enter email" name="email" class="email" required>
+          <br>
+          <textarea rows="10" cols="100" name="comment" form="usrform">Write Anything! Form a Network</textarea>
+          <input type="submit" value="Submit" class="submit" onclick="myFunction()">
+        </form>
+      </div>
+
+        <form id="frm1" action="">
+          First name: <input type="text" name="fname" value="Donald"><br>
+          <label for="Email"><b>Email</b></label>
+          Last name: <input type="text" name="lname" value="Duck"><br><br>
+          <input type="submit" value="Submit" onclick = "myFunction()">
+        </form>
+
+        <p>Click "Try it" to display the value of each element in the form.</p>
+
+        <button onclick="myFunction()">Try it</button>
+
+        <p id="demo"></p>
+
+        <script>
+          var text = "";
+          function myFunction() {
+            var x = document.getElementById("frm1");
+            var i;
+            for (i = 0; i < x.length ;i++) {
+             text += x.elements[i].value + "<br>";
+            }
+            document.getElementById("demo").innerHTML = text;
+          }
+        </script>
+      
+      <!-- Team Forum Form
+      <div class="form">
+        <h1>Leave a Question or a Message</h1>
         <form action="" method = "GET" id="usrform">
           <label for="uname"><b>Username</b></label>
           <input type="text" placeholder="Enter Username" name="uname" class="username" required>
@@ -69,6 +109,7 @@
           <br>
           <textarea rows="10" cols="100" name="comment" form="usrform">Write Anything! Form a Network</textarea>
           <input type="submit" value="Submit" class="submit" onclick = "myFunction()>
+          <br>                                                             
           <h1>Questions</h1>
         </form>
       </div>
@@ -86,6 +127,9 @@
            "email: " + usrmail + "<br>" + 
            "question: " + usrquest + "<br><br>";
         }
-        </script>
+        </script> -->
+      
+      
+        
   </body>
 </html>
