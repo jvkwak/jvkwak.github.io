@@ -98,7 +98,7 @@
         </div>
       </div>
      
-      <div class="questions">
+      <div id ="questions">
         <h2> Questions</h2>
         <form action="" method="GET" id="usrform">
           <textarea rows="10" cols="60" name="comment" form="usrform" minlength="20">Enter text here...</textarea>
@@ -111,10 +111,8 @@
       <script>
         var text = document.getElementById("demo").textContent;
         const urlParams = new URLSearchParams(window.location.search);
-        const username = urlParams.get("uname")
-        const email = urlParams.get("email");
         const comment = urlParams.get("comment");
-        text += "username: " + username + "<br>" + "email: " + email + "<br>" + "question: " + comment + "<br><br>";
+        text +=  comment + "<br><br>";
         document.getElementById("demo").innerHTML = text;
       </script>
 
