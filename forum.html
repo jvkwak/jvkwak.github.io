@@ -60,7 +60,7 @@
       <!-- Team Forum Form -->
       <div class="form">
         <h1>Leave a Question or a Message</h1>
-        <form action="#" id="usrform">
+        <form action="#" method = "GET" id="usrform">
           <label for="uname"><b>Username</b></label>
           <input type="text" placeholder="Enter Username" name="uname" class="username" required>
           <br>
@@ -72,19 +72,17 @@
         </form>
       </div>
         <h1>Questions</h1>
-        <p id="demo"></p>
+        <p id="questions"></p>
 
         <script>   
           var text = "";
-          var text = localStorage.getItem('text');
           function myFunction() {
             var x = document.getElementById("usrform");
             var i;
             for (i = 0; i < x.length ;i++) {
-             text += x.elements[i].value + "<br>";
+             text += x.elements[i].value + "<br><br>";
             }
-            document.getElementById("demo").innerHTML = text;
-            localStorage.setItem('text', text);
+            document.getElementById("questions").innerHTML = text;
           }
         </script>
   </body>
