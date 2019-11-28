@@ -71,30 +71,18 @@
           <input type="submit" value="Submit" class="submit" onclick="myFunction()">
         </form>
       </div>
-
-        <form id="frm1" action="">
-          First name: <input type="text" name="fname" value="Donald"><br>
-          <label for="Email"><b>Email</b></label>
-          Last name: <input type="text" name="lname" value="Duck"><br><br>
-          <input type="submit" value="Submit" onclick = "myFunction()">
-        </form>
-
-        <p>Click "Try it" to display the value of each element in the form.</p>
-
-        <p id="demo"></p>
-
-        <script>
-          var text = "";
-          function myFunction() {
-            var x = document.getElementById("usrform");
-            var i;
-            for (i = 0; i < x.length ;i++) {
-             text += x.elements[i].value + "<br>";
-              
-            }
-            document.getElementById("demo").innerHTML = text;
-          }
-        </script>
+      <h1>Questions</h1>
+      <p id="demo"></p>
+      <script>
+        var text = "";
+        function myFunction() {
+          var x = document.getElementById("usrform");
+          var usrname = x.elements[0].value;  
+          var usrmail = x.elements[1].value;
+          var usrquest = x.elements[2].value;                                                                               
+          document.getElementById("demos").innerHTML = "username: " + usrname + "<br>" + "email: " + usrmail + "<br>" + "question: " + usrquest + "<br><br>";
+        }
+      </script>
       
       <!-- Team Forum Form
       <div class="form">
