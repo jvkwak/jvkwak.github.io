@@ -68,7 +68,7 @@
           <input type="text" placeholder="Enter email" name="email" class="email" required>
           <br>
           <textarea rows="10" cols="100" name="comment" form="usrform">Write Anything! Form a Network</textarea>
-          <button class="submit" onclick="myFunction()"> Submit </button>
+          <button class="submit"> Submit </button>
         </form>
       </div>
       <h1>Questions</h1>
@@ -76,16 +76,13 @@
       <script>
         var text = "";
         alert("HAHAHAH");
-        function myFunction() {
-          /*text += "username: " + usrname + "<br>" + "email: " + email + "<br>" + "question: " + comment + "<br><br>";*/
-          const urlParams = new URLSearchParams(window.location.search);
-          const username = urlParams.get("uname");
-          const email = urlParams.get("email");
-          const comment = urlParams.get("comment");
-          text += "username: " + username + "<br>" + "email: " + email + "<br>" + "question: " + comment + "<br><br>";
-          document.getElementById("demo").innerHTML = text;
-          console.log("chec");
-        }
+        const urlParams = new URLSearchParams(window.location.search);
+        const username = urlParams.get("uname");
+        const email = urlParams.get("email");
+        const comment = urlParams.get("comment");
+        text += "username: " + username + "<br>" + "email: " + email + "<br>" + "question: " + comment + "<br><br>";
+        document.getElementById("demo").innerHTML = text;
+        console.log("chec");
       </script>
   </body>
 </html>
