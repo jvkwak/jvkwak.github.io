@@ -7,6 +7,23 @@
     <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic|Staatliches&display=swap" rel="stylesheet">
     <script src="https://apis.google.com/js/platform.js" async defer></script>
     <script>
+      function onSignIn(googleUser) {
+        var profile = googleUser.getBasicProfile();
+        console.log('ID: ' + profile.getId()); // Do not send to your backend! Use an ID token instead.
+        console.log('Name: ' + profile.getName());
+        console.log('Image URL: ' + profile.getImageUrl());
+        console.log('Email: ' + profile.getEmail()); // This is null if the 'email' scope is not present.
+      }
+    </script>
+    <script>
+      function signOut() {
+        var auth2 = gapi.auth2.getAuthInstance();
+        auth2.signOut().then(function () {
+        console.log('User signed out.');
+        });
+      }
+    </script>
+    <script>
       function init() {
         console.log('init');
         gapi.load('auth2', function() {
@@ -66,7 +83,7 @@
               <a href="Q&A.html">Q&A</a>
             </div>
         </div>
-          <a class="dropbtn" href="forum.html">Team Forum</a>
+          <a class="dropbtn" href="forum.html">Team Forum</a>         
       </ul>
     </section>
     
@@ -105,6 +122,7 @@
           <button type="button" class="Signupbtn">Sign Up</button>
           <!-- Sign In Button -->
           <button><div class="g-signin2" data-onsuccess="onSignIn">Sign In with Google</div></button>
+          <a href="#" onclick="signOut();">Sign out</a>
         </div>
       </form>
       
@@ -112,7 +130,7 @@
       <div class="text">
         <form action="/action_page.php" method="post" id="usrform">
           <textarea rows="10" cols="60" name="comment" form="usrform" minlength="20">Enter text here...</textarea>
-          <input type="submit" value="Submit" >
+          <input type="submit" value = "Submit" >
         </form>
       </div>
 
