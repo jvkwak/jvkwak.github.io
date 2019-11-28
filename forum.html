@@ -81,17 +81,16 @@
 
         <p>Click "Try it" to display the value of each element in the form.</p>
 
-        <button onclick="myFunction()">Try it</button>
-
         <p id="demo"></p>
 
         <script>
           var text = "";
           function myFunction() {
-            var x = document.getElementById("frm1");
+            var x = document.getElementById("usrform");
             var i;
             for (i = 0; i < x.length ;i++) {
              text += x.elements[i].value + "<br>";
+              
             }
             document.getElementById("demo").innerHTML = text;
           }
