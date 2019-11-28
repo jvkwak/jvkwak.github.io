@@ -8,22 +8,22 @@
     <script src="https://apis.google.com/js/platform.js" async defer></script>
     <script>
       function onSignIn(googleUser) {
+        document.getElementById("loginwindow").style.visibility = "hidden";
         var profile = googleUser.getBasicProfile();
         console.log('ID: ' + profile.getId()); // Do not send to your backend! Use an ID token instead.
         console.log('Name: ' + profile.getName());
         console.log('Image URL: ' + profile.getImageUrl());
         console.log('Email: ' + profile.getEmail()); // This is null if the 'email' scope is not present.
       }
-    </script>
-    <script>
+      
       function signOut() {
+        document.getElementById("loginwindow").style.visibility = "visible";
         var auth2 = gapi.auth2.getAuthInstance();
         auth2.signOut().then(function () {
         console.log('User signed out.');
         });
       }
-    </script>
-    <script>
+      
       function init() {
         console.log('init');
         gapi.load('auth2', function() {
@@ -83,7 +83,8 @@
               <a href="Q&A.html">Q&A</a>
             </div>
         </div>
-          <a class="dropbtn" href="forum.html">Team Forum</a>         
+          <a class="dropbtn" href="forum.html">Team Forum</a>
+          <a href="#" onclick="signOut();">Sign out</a>
       </ul>
     </section>
     
@@ -101,30 +102,33 @@
       </div>
       
       <!-- Login Form-->
-      <h2>Login to Proceed</h2>
-      <form action="/action_page.php" method="post">
-        <div class="container">
-          <label for="uname"><b>Username</b></label>
-          <input type="text" placeholder="Enter Username" name="uname" required>
-          <br>
-          <label for="psw"><b>Password</b></label>
-          <input type="password" placeholder="Enter Password" name="psw" required>
+      <div id = loginwindow>
+        <h2>Login to Proceed</h2>
+        <form action="/action_page.php" method="post">
+          <div class="container">
+            <label for="uname"><b>Username</b></label>
+            <input type="text" placeholder="Enter Username" name="uname" required>
+            <br>
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" required>
 
-          <button type="submit" id="login">Login</button>
-          <br>
-          <label>
-            <input type="checkbox" checked="checked" name="remember"> Remember me
-          </label>
-        </div>
+            <button type="submit" id="login">Login</button>
+            <br>
+            <label>
+              <input type="checkbox" checked="checked" name="remember"> Remember me
+            </label>
+          </div>
 
-        <div class="container" style="background-color:#f1f1f1">
-          <button type="button" class="cancelbtn">Cancel</button>
-          <button type="button" class="Signupbtn">Sign Up</button>
-          <!-- Sign In Button -->
-          <button><div class="g-signin2" data-onsuccess="onSignIn">Sign In with Google</div></button>
-          <a href="#" onclick="signOut();">Sign out</a>
-        </div>
-      </form>
+          <div class="container" style="background-color:#f1f1f1">
+            <button type="button" class="cancelbtn">Cancel</button>
+            <button type="button" class="Signupbtn">Sign Up</button>
+            <!-- Sign In Button -->
+            <button><div class="g-signin2" data-onsuccess="onSignIn">Sign In with Google</div></button>
+          </div>
+        </form>
+      </div>
+      
+      
       
       <h2> Questions</h2>
       <div class="text">
