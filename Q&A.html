@@ -111,9 +111,11 @@
 
    <script src="https://apis.google.com/js/platform.js?onload=init" async defer></script>
    <script>
+      document.getElementById("userinfo").style.visibility = "hidden";
       function onSignIn(googleUser) {
         document.getElementById("loginwindow").style.visibility = "hidden";
         document.getElementById("userinfo").style.visibility = "visible";
+        alert(document.getElementById("userinfo").style.visibility);
         var profile = googleUser.getBasicProfile();
         console.log('ID: ' + profile.getId()); // Do not send to your backend! Use an ID token instead.
         console.log('Name: ' + profile.getName());
