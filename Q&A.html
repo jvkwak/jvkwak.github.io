@@ -98,13 +98,25 @@
         </div>
       </div>
      
-      <h2> Questions</h2>
-      <div class="text">
-        <form action="/action_page.php" method="post" id="usrform">
+      <div class="questions">
+        <h2> Questions</h2>
+        <form action="" method="GET" id="usrform">
           <textarea rows="10" cols="60" name="comment" form="usrform" minlength="20">Enter text here...</textarea>
-          <input type="submit" value = "Submit" >
+          <button class ="submit"> Submit </button>
         </form>
       </div>
+      
+      <h2>Questions</h2>
+      <p id="demo"></p>
+      <script>
+        var text = document.getElementById("demo").textContent;
+        const urlParams = new URLSearchParams(window.location.search);
+        const username = urlParams.get("uname")
+        const email = urlParams.get("email");
+        const comment = urlParams.get("comment");
+        text += "username: " + username + "<br>" + "email: " + email + "<br>" + "question: " + comment + "<br><br>";
+        document.getElementById("demo").innerHTML = text;
+      </script>
 
     </section>
 
@@ -112,10 +124,13 @@
    <script src="https://apis.google.com/js/platform.js?onload=init" async defer></script>
    <script>
       document.getElementById("userinfo").style.visibility = "hidden";
+      document.getElementById("questions").style.visibility = "hidden";
       function onSignIn(googleUser) {
         document.getElementById("loginwindow").style.visibility = "hidden";
         document.getElementById("userinfo").style.visibility = "visible";
+        document.getElementById("questions").style.visibility = "visible";
         alert(document.getElementById("userinfo").style.visibility);
+        alert(document.getElementById("questions").style.visibility);
         var profile = googleUser.getBasicProfile();
         console.log('ID: ' + profile.getId()); // Do not send to your backend! Use an ID token instead.
         console.log('Name: ' + profile.getName());
