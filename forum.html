@@ -60,7 +60,7 @@
       <!-- Team Forum Form -->
       <div class="form">
         <h1>Leave a Question or a Message</h1>
-        <div id="usrform">
+        <form id="usrform">
           <label for="uname"><b>Username</b></label>
           <input type="text" placeholder="Enter Username" name="uname" class="username" required>
           <br>
@@ -69,7 +69,7 @@
           <br>
           <textarea rows="10" cols="100" name="comment" form="usrform">Write Anything! Form a Network</textarea>
           <button class="submit" onclick="myFunction()"> Submit </button>
-        </div>
+        </form>
       </div>
       <h1>Questions</h1>
       <p id="demo"></p>
@@ -82,7 +82,7 @@
           var usrquest = x.elements[2].value;                                                                                
           text += "username: " + usrname + "<br>" + "email: " + usrmail + "<br>" + "question: " + usrquest + "<br><br>";
           document.getElementById("demo").innerHTML = text;
-          console.log("가즈아 !!!!1");
+          console.log("check");
         }
       </script>
   </body>
