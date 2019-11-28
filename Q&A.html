@@ -133,16 +133,9 @@
         <h2>User Information</h2>
         <img src = "" alt = "profile image>
         <span id = "name">Username: </span>
-        <span id = "email"></span>
-        <script>
-        var profile = googleUser.getBasicProfile();
-        document.getElementById("name").innerHTML = profile.getName();
-        document.getElementsByTagName("img")[0].src.innerHTML = profile.getImageUrl();
-        document.getElementById("email").innerHTML = profile.getEmail();
-        </script>
+        <span id = "email">Email: </span>
       </div>
-      
-      
+     
       <h2> Questions</h2>
       <div class="text">
         <form action="/action_page.php" method="post" id="usrform">
@@ -155,5 +148,11 @@
 
 
    <script src="https://apis.google.com/js/platform.js?onload=init" async defer></script>
+   <script>
+    var profile = googleUser.getBasicProfile();
+    document.getElementById("name").innerHTML += profile.getName();
+    document.getElementsByTagName("img")[0].src.innerHTML = profile.getImageUrl();
+    document.getElementById("email").innerHTML += profile.getEmail();
+   </script>
   </body>
 </html>
