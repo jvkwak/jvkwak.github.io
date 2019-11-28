@@ -9,6 +9,7 @@
     <script>
       function onSignIn(googleUser) {
         document.getElementById("loginwindow").style.visibility = "hidden";
+        document.getElementById("userinfo").style.visibility = "visible";
         var profile = googleUser.getBasicProfile();
         console.log('ID: ' + profile.getId()); // Do not send to your backend! Use an ID token instead.
         console.log('Name: ' + profile.getName());
@@ -18,6 +19,7 @@
       
       function signOut() {
         document.getElementById("loginwindow").style.visibility = "visible";
+        document.getElementById("userinfo").style.visibility = "hidden";
         var auth2 = gapi.auth2.getAuthInstance();
         auth2.signOut().then(function () {
         console.log('User signed out.');
