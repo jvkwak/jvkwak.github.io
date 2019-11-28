@@ -71,19 +71,19 @@
           <input type="submit" value="Submit" class="submit" onclick = "myFunction()>
         </form>
       </div>
-        <h1>Questions</h1>
-        <p id="questions"></p>
+      <h1>Questions</h1>
+      <p id="questions"></p>
 
-        <script>   
-          var text = "";
-          function myFunction() {
-            var x = document.getElementById("usrform");
-            var i;
-            for (i = 0; i < x.length ;i++) {
-             text += x.elements[i].value + "<br><br>";
-            }
-            document.getElementById("questions").innerHTML = text;
-          }
+       <script>   
+        var text = "";
+        function myFunction() {
+        var x = document.getElementById("usrform");
+        var i;
+        for (i = 0; i < x.length ;i++) {
+          text += x.elements[i].value + "<br><br>";
+        }
+        document.getElementById("questions").innerHTML = text;
+        }
         </script>
   </body>
 </html>
