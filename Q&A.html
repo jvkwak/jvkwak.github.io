@@ -154,9 +154,9 @@
    <script src="https://apis.google.com/js/platform.js?onload=init" async defer></script>
    <script>
     var profile = googleUser.getBasicProfile();
-    document.getElementById("name").innerHTML = profile.getName();
+    document.getElementById("name").innerHTML = "profile.getName()";
     document.getElementsByTagName("img")[0].setAttribute("src", "profile.getImageUrl()");
-    document.getElementById("email").innerHTML = profile.getEmail();
+    document.getElementById("email").innerHTML = "profile.getEmail()";
    </script>
   </body>
 </html>
