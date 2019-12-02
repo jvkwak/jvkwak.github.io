@@ -3,12 +3,12 @@ var images = [];
 var texts = [];
 var time = 3000;
 
-images[0] = 'wonjung.jpg';
-images[1] = 'juhee.jpg';
-images[2] = 'joonvin.jpg';
-images[3] = 'jenny.jpg';
-images[4]= 'giung.jpg';
-images[5]= 'soomin.jpg';
+images[0] = document.getElementById("wonjung");
+images[1] = document.getElementById("juhee");
+images[2] = document.getElementById("joonvin");
+images[3] = document.getElementById("jenny");
+images[4] = document.getElementById("giung");
+images[5] = document.getElementById("soomin");
 
 function changeImg(){
   if(i < images.length -1)
