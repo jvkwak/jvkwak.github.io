@@ -24,4 +24,4 @@ function changeImg(){
 }
 window.onload = changeImg;
 
-<img name = "slide" width = "400" height "200">
+//<img name = "slide" width = "400" height "200">
