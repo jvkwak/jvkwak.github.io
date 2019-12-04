@@ -2,12 +2,12 @@ var i = 0;
 var slides = [];
 var time = 3000;
 
-slides[0] = document.getElementById("wonjung");
-slides[1] = document.getElementById("juhee");
-slides[2] = document.getElementById("joonvin");
-slides[3] = document.getElementById("jenny");
-slides[4] = document.getElementById("giung");
-slides[5] = document.getElementById("soomin");
+slides.push (document.getElementById("wonjung").childnodes,
+             document.getElementById("juhee").childnodes, 
+             document.getElementById("joonvin").childnodes, 
+             document.getElementById("jenny").childnodes, 
+             document.getElementById("giung").childnodes, 
+             document.getElementById("soomin").childnodes);
 
 function changeSlide(){
   if(i < slides.length -1)
@@ -19,7 +19,7 @@ function changeSlide(){
     i = 0;
   }
   
-  setTimeout("chagesImg()", time);
+  setTimeout("chagesSlide()", time);
 }
 window.onload = changeSlide;
 
