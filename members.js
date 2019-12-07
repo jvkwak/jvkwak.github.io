@@ -1,25 +1,24 @@
-var i = 0;
-var slides = [];
-var time = 3000;
+var slideIndex = 0;
+showSlides();
 
-slides.push (document.getElementById("wonjung").childnodes,
-             document.getElementById("juhee").childnodes, 
-             document.getElementById("joonvin").childnodes, 
-             document.getElementById("jenny").childnodes, 
-             document.getElementById("giung").childnodes, 
-             document.getElementById("soomin").childnodes);
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("slide");
+  //var bars = document.getElementsByClassName("bar");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
 
-function changeSlide(){
-  if(i < slides.length -1)
-  {
-    i++;
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+
+/*
+  for (i = 0; i < bars.length; i++) {
+    bars[i].className = bars[i].className.replace(" active", "");
   }
-  else
-  {
-    i = 0;
-  }
-  
-  setTimeout("chagesSlide()", time);
+  */
+
+  slides[slideIndex-1].style.display = "block";
+  //bars[slideIndex-1].className += " active";
+  setTimeout(showSlides, 4000); // Change image every 2 seconds
 }
-window.onload = changeSlide;
-
