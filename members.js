@@ -14,7 +14,7 @@ function showSlides() {
 
 /*
   for (i = 0; i < bars.length; i++) {
-    bars[i].className = bars[i].className.replace(" active", "");
+    dots[i].className = bars[i].className.replace(" active", "");
   }
   */
 
