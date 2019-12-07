@@ -4,8 +4,8 @@ function onSignIn(googleUser) {
   document.getElementById("loginwindow").style.visibility = "hidden";
   document.getElementById("userinfo").style.visibility = "visible";
   document.getElementById("questions").style.visibility = "visible";
-  alert(document.getElementById("userinfo").style.visibility);
-  alert(document.getElementById("questions").style.visibility);
+  //alert(document.getElementById("userinfo").style.visibility);
+  //alert(document.getElementById("questions").style.visibility);
   var profile = googleUser.getBasicProfile();
   console.log('ID: ' + profile.getId()); // Do not send to your backend! Use an ID token instead.
   console.log('Name: ' + profile.getName());
