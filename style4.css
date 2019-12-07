@@ -126,7 +126,6 @@ input[name = "r"]{
   height: 1008px;
   float:left;
   text-align: center;
-
 }*/
 .cover-title span{
   font-size: 0.5em;
@@ -154,4 +153,22 @@ input[name = "r"]{
   background-size: cover;
   background-position: bottom;
   transition: padding .5s;
+}
+
+/*fade*/
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
 }
